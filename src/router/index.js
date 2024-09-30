@@ -15,6 +15,8 @@ import CoReg_Period from '@/components/Co-Reg/CoReg_Period.vue';
 import CoReg_submit from '@/components/Co-Reg/CoReg_submit.vue';
 import CoReg_Co_Edit from '@/components/Co-Reg/CoReg_Co_Edit.vue';
 import CoReg_Co_Detail from '@/components/Co-Reg/CoReg_Co_Detail.vue';
+import CoReg_Receipt from '@/components/Co-Reg/CoReg_Receipt.vue';
+import CoReg_ReceiptEdit from '@/components/Co-Reg/CoReg_ReceiptEdit.vue';
 // 부동산등기
 import RealReg_Page from '@/components/RE-Reg/RealReg_Page.vue';
 import RealRegDetail from '@/components/RE-Reg/RealRegDetail.vue';
@@ -39,14 +41,16 @@ const routes = [
   { path: '/easyreceipt/edit/:easyreceipt_id?', component: EasyReceiptEdit, name: 'EasyReceiptEdit', props: true, meta: { requiresAuth: true } },
   { path: '/easyreceipt/receiptReport/:easyreceipt_id', name: 'EasyReceiptReport', component: EasyReceiptReport, props: true, meta: { requiresAuth: true } },
   // 상업등기
-  { path: '/coreg', component: CoReg_Page, meta: { requiresAuth: true } ,
+  { path: '/coreg', component: CoReg_Page, meta: { requiresAuth: true } , redirect: '/coreg/companies',
     children: [
       { path: 'companies', component: CoReg_Companies, name: 'CoReg_Companies' }, // 이름 추가
       { path: 'period', component: CoReg_Period, name: 'CoReg_Period' },
+      { path: 'receipt', component: CoReg_Receipt, name: 'CoReg_Receipt' },
       { path: 'submit', component: CoReg_submit, name: 'CoReg_submit' }
     ]},
   { path: '/coreg/companies/edit/:company_id?', component: CoReg_Co_Edit, name: 'CoReg_Co_Edit', props: true, meta: { requiresAuth: true } },
   { path: '/coreg/companies/detail/:company_id?', component: CoReg_Co_Detail, name: 'CoReg_Co_Detail', props: true, meta: { requiresAuth: true } },
+  { path: '/coreg/receipt/edit/:receipt_id?', component: CoReg_ReceiptEdit, name: 'CoReg_ReceiptEdit', props: true, meta: { requiresAuth: true } },
 
   // 부동산등기
   { path: '/realreg', component: RealReg_Page, meta: { requiresAuth: true } },
