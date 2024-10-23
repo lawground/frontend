@@ -2,7 +2,7 @@
   <div class="login-container">
     <div class="login-box">
       <img src="@/assets/logo.png" alt="User Avatar" class="avatar">
-      <h1>S&K법무사사무소</h1>
+      <h1>장윤진 법무사사무소</h1>
       <form @submit.prevent="login">
         <div class="input-group">
           <i class="fas fa-user"></i>
