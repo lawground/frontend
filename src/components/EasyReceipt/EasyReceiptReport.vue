@@ -111,11 +111,11 @@
     <p class="signature" style="text-align: center;">{{ currentDate }}</p>
 
 
-    <p>장윤진 법무사사무소</p>
-    <p>경기도 안양시 동안구 시민대로327번길 7, 8층 810호(관양동, 대명 글로벌 비즈스퀘어)</p>
+    <p class="mainname">장윤진 법무사사무소</p>
+    <p><br>경기도 안양시 동안구 시민대로327번길 7, 8층 810호(관양동, 대명 글로벌 비즈스퀘어)</p>
     <p>연락처 : Tel. 031-425-7533, Fax. 031-425-7530</p>
     <p class="total">계좌번호 : 하나은행 448-910491-38407 장윤진 (장윤진법무사사무소)</p>
-    <img src="./signature.png" style="width: 80%;" @load="imageLoaded">
+    <img src="./signature.png" @load="imageLoaded">
   </div>
 
 </template>
@@ -149,7 +149,7 @@ export default {
       const hours = String(today.getHours()).padStart(2, '0');
       const minutes = String(today.getMinutes()).padStart(2, '0');
       const seconds = String(today.getSeconds()).padStart(2, '0');
-      return `SNK${year}${month}${day}${hours}${minutes}${seconds}`;
+      return `J${year}${month}${day}${hours}${minutes}${seconds}`;
     }
   },
 
@@ -293,12 +293,17 @@ th {
   font-weight: bold;
 }
 
+.mainname {
+  font-weight: bold;
+  font-size:20px;
+}
+
 .signature {
   margin: 30px;
 }
 
 img {
   width: 90px;
-  transform: translate(590%, -200%);
+  transform: translate(550%, -200%);
 }
 </style>

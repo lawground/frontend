@@ -4,8 +4,8 @@
       <b-nav tabs style="min-width:1000px">
           <b-nav-item to="/coreg/companies" exact class="menu-item">관리법인</b-nav-item>
           <b-nav-item to="/coreg/period" class="menu-item">임기관리</b-nav-item>
-          <b-nav-item to="/coreg/receipt" class="menu-item">영수증</b-nav-item>
-          <b-nav-item to="/coreg/submit" class="menu-item">등기신청</b-nav-item>
+          <b-nav-item to="/coreg/receipt" class="menu-item">영수증(제작중)</b-nav-item>
+          <b-nav-item to="/coreg/submit" class="menu-item">등기신청(제작중)</b-nav-item>
         </b-nav>
     <div class="contents">
       <router-view />

@@ -49,7 +49,7 @@
     <!-- 위임인 확인서 -->
     <div class="hpa">
       <div class="head-row"> 제출위임인 확인서 </div>
-      <div class="main-row2"> {{ lawsuit.clients.join(', ') }}은(는) 수임인 법무사 서영준으로부터 법무사를 통한 전자소송 진행 방식(전자적 제출·송달·열람 등),
+      <div class="main-row2"> {{ lawsuit.clients.join(', ') }}은(는) 수임인 법무사 장윤진으로부터 법무사를 통한 전자소송 진행 방식(전자적 제출·송달·열람 등),
         전자소송 동의 확약서와 송달장소 및 송달영수인신고서 등의 법률적 의미에 관하여 충분한 설명을 들었으며, 수임인이 제출하는 (신청서, 제증명, 송달장소 및 송달영수인 신고서, 보정서, 취하서, 전자소송
         동의 확약서)이(가) 위임인의 의사에 따라 작성된 것임을 확인합니다(민사소송 등에서의 전자문서 이용 등에 관한 규칙 제11조 제3항 제2호 등에 따른 확인). </div>
       <div class="date-row">
@@ -71,9 +71,9 @@
       </div>
       <hr class="dashed-line">
       <div class="head-row2"> 제출위임장 </div>
-      <div class="category-row2">법무사 서영준<br>
-        경기도 수원시 영통구 통영로 1617, 훼미리타워 207호 (영통동)<br>
-        (전화 : 031-8067-6900) </div>
+      <div class="category-row2">법무사 장윤진<br>
+        경기도 안양시 동안구 시민대로327번길 7, 8층 810호(관양동, 대명 글로벌 비즈스퀘어)<br>
+        (전화 : 031-425-7533) </div>
       <div class="category-row">위 사람을 대리인으로 정하고 다음 사항의 권한을 위임함.</div>
       <div class="main-row2">{{ lawsuit.clientType }} {{ lawsuit.clients.join(', ') }}와(과) {{ lawsuit.opponentType }} {{
         lawsuit.opponents.join(', ') }} 사이의 {{ lawsuit.caseName }}에 관하여(신청서, 소장, 제증명, 송달장소 및 송달영수인 신고서, 준비서면, 보정서, 취하서,
